@@ -1,0 +1,37 @@
+:root {
+  --ink: #241f2a;
+  --ink-soft: #5f5966;
+  --paper: #fffaf6;
+  --paper-2: #f8efe9;
+  --line: #eadfd8;
+  --terracotta: #a95745;
+  --terracotta-dark: #874235;
+  --plum: #362a39;
+  --container: 880px;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: "DM Sans", sans-serif; font-size: 16px; line-height: 1.72; }
+a { color: inherit; }
+.legal-header { border-bottom: 1px solid var(--line); background: rgba(255,250,246,.95); }
+.legal-nav { width: min(calc(100% - 40px), 1180px); min-height: 76px; margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.legal-nav img { display: block; width: 86px; height: 60px; object-fit: contain; }
+.back-link { color: var(--terracotta-dark); font-weight: 700; text-decoration: none; }
+.legal-hero { padding: 72px 20px 48px; background: linear-gradient(135deg, #fffaf6, #f7e7df); border-bottom: 1px solid var(--line); }
+.legal-hero > div, .legal-content { width: min(100%, var(--container)); margin-inline: auto; }
+.eyebrow { margin: 0 0 14px; color: var(--terracotta-dark); font-size: .76rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
+h1, h2 { font-family: Manrope, sans-serif; line-height: 1.18; letter-spacing: -.035em; }
+h1 { max-width: 760px; margin: 0 0 16px; font-size: clamp(2.35rem, 6vw, 4.2rem); }
+h2 { margin: 42px 0 12px; font-size: 1.5rem; }
+.legal-hero p:last-child { max-width: 720px; margin: 0; color: var(--ink-soft); }
+.legal-content { padding: 54px 20px 80px; }
+.legal-content p, .legal-content li { color: var(--ink-soft); }
+.legal-content ul { padding-left: 22px; }
+.notice { margin: 30px 0; border-left: 4px solid var(--terracotta); border-radius: 0 12px 12px 0; background: var(--paper-2); padding: 18px 20px; }
+.notice p { margin: 0; }
+.legal-footer { background: var(--plum); color: white; }
+.legal-footer-inner { width: min(calc(100% - 40px), 1180px); margin: auto; padding: 30px 0; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px 26px; }
+.legal-footer p { margin: 0; color: rgba(255,255,255,.58); }
+.legal-footer nav { display: flex; flex-wrap: wrap; gap: 12px 20px; }
+.legal-footer a { color: rgba(255,255,255,.72); }
+@media (max-width: 560px) { .legal-nav { width: min(calc(100% - 28px), 1180px); } .back-link { font-size: .88rem; } .legal-hero { padding-top: 54px; } }
