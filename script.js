@@ -32,3 +32,80 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
 } else {
   revealItems.forEach((item) => item.classList.add('is-visible'));
 }
+
+// Analytics: ponto único para eventos futuros. Só envia se um dataLayer (ex.: GTM) já existir na página.
+function trackEvent(name, detail = {}) {
+  if (Array.isArray(window.dataLayer)) {
+    window.dataLayer.push({ event: name, ...detail });
+  }
+}
+
+document.addEventListener('click', (event) => {
+  const target = event.target.closest('[data-event]');
+  if (!target) return;
+  trackEvent(target.dataset.event, { label: target.textContent.trim() });
+  if (target.classList.contains('checkout-button')) {
+    trackEvent('checkout_started', { plan: target.dataset.plan });
+  }
+});
+
+document.querySelectorAll('.faq-list details').forEach((item) => {
+  item.addEventListener('toggle', () => {
+    if (item.open) trackEvent('faq_open', { question: item.querySelector('summary').textContent.replace('+', '').trim() });
+  });
+});
+
+// Demonstração: usa /assets/demo/demo-wephotly.mp4 quando existir; caso contrário, mantém o mockup animado.
+const demoFrame = document.querySelector('[data-demo]');
+if (demoFrame) {
+  const video = demoFrame.querySelector('.demo-video');
+  const playButton = demoFrame.querySelector('.demo-play');
+  const toggleButton = demoFrame.querySelector('.demo-toggle');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let hasVideo = false;
+
+  const setPlaying = (isPlaying) => {
+    demoFrame.classList.toggle('is-playing', isPlaying);
+    toggleButton.setAttribute('aria-label', isPlaying ? 'Pausar demonstração' : 'Reproduzir demonstração');
+  };
+
+  const enableVideo = () => {
+    if (hasVideo) return;
+    hasVideo = true;
+    video.hidden = false;
+    toggleButton.hidden = false;
+    demoFrame.classList.add('has-video');
+    if (prefersReducedMotion) {
+      video.pause();
+    } else if (video.paused) {
+      video.play().catch(() => setPlaying(false));
+    } else {
+      setPlaying(true);
+    }
+  };
+
+  const togglePlayback = () => {
+    if (!hasVideo) {
+      setPlaying(true);
+      return;
+    }
+    if (video.paused) {
+      video.play().catch(() => setPlaying(false));
+    } else {
+      video.pause();
+    }
+  };
+
+  const poster = new Image();
+  poster.onload = () => { video.poster = poster.src; };
+  poster.src = '/assets/demo/demo-wephotly-poster.jpg';
+
+  video.addEventListener('loadedmetadata', enableVideo);
+  video.addEventListener('playing', () => setPlaying(true));
+  video.addEventListener('pause', () => setPlaying(false));
+  video.addEventListener('click', togglePlayback);
+  playButton.addEventListener('click', togglePlayback);
+  toggleButton.addEventListener('click', togglePlayback);
+
+  if (video.readyState >= 1) enableVideo();
+}

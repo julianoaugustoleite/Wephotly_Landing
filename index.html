@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>WePhotly | Sistema de Gestão para Fotógrafos e Estúdios Fotográficos</title>
-  <meta name="description" content="Sistema de gestão para fotógrafos: organize atendimentos, clientes, orçamentos, contratos, sessões, produção, entregas e financeiro em um só lugar. Teste com 7 dias de garantia.">
+  <title>WePhotly | Sistema de gestão para fotógrafos</title>
+  <meta name="description" content="Organize atendimentos, clientes, sessões, contratos, produção, agenda e financeiro em um sistema de gestão feito para fotógrafos.">
+  <meta name="keywords" content="sistema para fotógrafos, gestão de estúdio fotográfico, software para fotógrafos, CRM para fotógrafos, gestão de clientes para fotógrafos, controle de sessões fotográficas">
   <meta name="theme-color" content="#fffaf6">
   <link rel="canonical" href="https://www.wephotly.com/">
 
@@ -15,15 +16,15 @@
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:site_name" content="WePhotly">
-  <meta property="og:title" content="WePhotly | Sistema de Gestão para Fotógrafos e Estúdios Fotográficos">
-  <meta property="og:description" content="Organize atendimentos, clientes, orçamentos, contratos, sessões, produção, entregas e financeiro em um só lugar. Teste com 7 dias de garantia.">
+  <meta property="og:title" content="WePhotly | Sistema de gestão para fotógrafos">
+  <meta property="og:description" content="Organize atendimentos, clientes, sessões, contratos, produção, agenda e financeiro em um sistema de gestão feito para fotógrafos.">
   <meta property="og:url" content="https://www.wephotly.com/">
   <meta property="og:image" content="https://www.wephotly.com/images/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="WePhotly | Sistema de Gestão para Fotógrafos e Estúdios Fotográficos">
-  <meta name="twitter:description" content="Organize atendimentos, clientes, orçamentos, contratos, sessões, produção, entregas e financeiro em um só lugar.">
+  <meta name="twitter:title" content="WePhotly | Sistema de gestão para fotógrafos">
+  <meta name="twitter:description" content="Organize atendimentos, clientes, sessões, contratos, produção, agenda e financeiro em um sistema de gestão feito para fotógrafos.">
   <meta name="twitter:image" content="https://www.wephotly.com/images/og-image.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +32,7 @@
   <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800;900&family=Manrope:wght@700;800;900&display=swap"
         onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700;800;900&family=Manrope:wght@700;800;900&display=swap"></noscript>
-  <link rel="stylesheet" href="/styles.css?v=20261006">
+  <link rel="stylesheet" href="/styles.css?v=20261028">
 
   <script type="application/ld+json">
   {
@@ -40,7 +41,7 @@
     "name": "WePhotly",
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web",
-    "description": "Sistema de gestão para fotógrafos e estúdios fotográficos: atendimentos, clientes, orçamentos, contratos, sessões, produção, entregas e financeiro em um só lugar.",
+    "description": "Software para fotógrafos e gestão de estúdio fotográfico: atendimentos, clientes, orçamentos, contratos, controle de sessões fotográficas, produção, agenda e financeiro em um só lugar.",
     "url": "https://www.wephotly.com/",
     "image": "https://www.wephotly.com/images/og-image.jpg",
     "offers": [
@@ -75,14 +76,14 @@
         </picture>
       </a>
       <nav class="desktop-nav" aria-label="Navegação principal">
-        <a href="#como-funciona">Como funciona</a>
-        <a href="#recursos">Recursos</a>
-        <a href="#historia-real">História real</a>
+        <a href="#inicio">Início</a>
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#para-quem-e">Para quem é</a>
         <a href="#planos">Planos</a>
-        <a href="#faq">Dúvidas</a>
+        <a href="#faq">FAQ</a>
       </nav>
       <div class="header-actions">
-        <a class="login-link" href="https://app.wephotly.com/login">Entrar</a>
+        <a class="login-link" href="https://app.wephotly.com/login" data-event="login_click">Entrar</a>
         <a class="button button-small" href="#planos">Começar agora</a>
       </div>
       <button class="menu-button" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu">
@@ -90,16 +91,18 @@
       </button>
     </div>
     <nav class="mobile-nav" id="mobile-menu" aria-label="Navegação móvel" hidden>
-      <a href="#como-funciona">Como funciona</a>
-      <a href="#recursos">Recursos</a>
-      <a href="#historia-real">História real</a>
+      <a href="#inicio">Início</a>
+      <a href="#funcionalidades">Funcionalidades</a>
+      <a href="#para-quem-e">Para quem é</a>
       <a href="#planos">Planos</a>
-      <a href="#faq">Dúvidas</a>
-      <a href="https://app.wephotly.com/login">Entrar no WePhotly</a>
+      <a href="#faq">FAQ</a>
+      <a href="https://app.wephotly.com/login" data-event="login_click">Entrar</a>
+      <a class="button mobile-nav-cta" href="#planos">Começar agora</a>
     </nav>
   </header>
 
   <main id="conteudo">
+    <!-- 2. Hero -->
     <section class="hero hero-photo">
       <div class="hero-stage">
         <picture class="hero-media">
@@ -129,294 +132,498 @@
         </picture>
         <div class="container hero-grid">
           <div class="hero-copy reveal">
-            <p class="eyebrow"><span></span> Gestão feita para a rotina de fotógrafos</p>
             <h1>Seu estúdio organizado. Sua cabeça livre para fotografar.</h1>
-            <p class="hero-lead">Do primeiro “oi” do cliente à entrega final: acompanhe atendimentos, contratos, sessões, produção e pagamentos sem depender de memória, planilhas soltas ou dezenas de conversas.</p>
+            <p class="hero-lead">O WePhotly organiza atendimentos, clientes, contratos, sessões, produção e pagamentos em um único fluxo — para você parar de depender da memória para administrar seu estúdio.</p>
             <div class="hero-actions">
-              <a class="button" href="#planos">Quero testar com 7 dias de garantia</a>
-              <a class="button button-secondary" href="#como-funciona">Ver como funciona <span aria-hidden="true">↓</span></a>
+              <a class="button" href="#planos" data-event="hero_cta_click">Começar agora</a>
+              <a class="button button-secondary" href="#demonstracao" data-event="hero_cta_click">Ver como funciona <span aria-hidden="true">↓</span></a>
             </div>
-            <div class="micro-trust" aria-label="Benefícios da assinatura">
-              <span><b>✓</b> 7 dias de garantia</span>
-              <span><b>✓</b> Checkout seguro</span>
-              <span><b>✓</b> Acesso por e-mail</span>
-            </div>
+            <ul class="micro-trust">
+              <li><b aria-hidden="true">✓</b> 7 dias de garantia com reembolso integral</li>
+              <li><b aria-hidden="true">✓</b> Checkout seguro</li>
+              <li><b aria-hidden="true">✓</b> Acesso enviado por e-mail após a confirmação do pagamento</li>
+            </ul>
           </div>
         </div>
       </div>
-      <div class="container hero-proof-strip">
-        <p><strong>Um único fluxo</strong> para acompanhar cada cliente</p>
-        <span></span>
-        <p>Funciona no <strong>computador, tablet e celular</strong></p>
-        <span></span>
-        <p>Para fotógrafos independentes, <strong>estúdios e equipes</strong></p>
-      </div>
     </section>
 
-    <section class="section pain-section">
+    <!-- 3. Dor principal -->
+    <section class="section pain-section" id="dor">
       <div class="container">
         <div class="section-heading narrow reveal">
-          <p class="kicker">Menos improviso, mais clareza</p>
-          <h2>Você não precisa trabalhar o dia inteiro e ainda administrar o estúdio no escuro.</h2>
-          <p>Quando a rotina fica espalhada, pequenos esquecimentos viram retrabalho, atrasos e dinheiro que demora a entrar.</p>
+          <h2>Seu trabalho cresce. Sua organização precisa acompanhar.</h2>
+          <p>Quando cada informação fica em um lugar, você perde tempo procurando conversas, conferindo datas e tentando descobrir o que ainda precisa ser feito.</p>
         </div>
-        <div class="pain-grid">
-          <article class="pain-card reveal">
-            <span class="pain-number">01</span>
-            <h3>Atendimentos sem retorno</h3>
-            <p>O orçamento foi enviado, mas ninguém lembra qual conversa precisa de atenção hoje.</p>
-          </article>
-          <article class="pain-card reveal reveal-delay-small">
-            <span class="pain-number">02</span>
-            <h3>Prazos espalhados</h3>
-            <p>Sessão, seleção, edição e entrega ficam em agendas e anotações diferentes.</p>
-          </article>
-          <article class="pain-card reveal reveal-delay">
-            <span class="pain-number">03</span>
-            <h3>Financeiro sem contexto</h3>
-            <p>Você precisa conferir cliente por cliente para descobrir sinais, saldos e pendências.</p>
-          </article>
+        <ul class="pain-grid">
+          <li class="pain-card reveal"><span class="pain-number" aria-hidden="true">01</span><h3>Atendimentos se perdem nas conversas</h3></li>
+          <li class="pain-card reveal reveal-delay-small"><span class="pain-number" aria-hidden="true">02</span><h3>Orçamentos ficam sem retorno</h3></li>
+          <li class="pain-card reveal reveal-delay"><span class="pain-number" aria-hidden="true">03</span><h3>Dados de clientes ficam espalhados</h3></li>
+          <li class="pain-card reveal"><span class="pain-number" aria-hidden="true">04</span><h3>Contratos ficam fora do atendimento</h3></li>
+          <li class="pain-card reveal reveal-delay-small"><span class="pain-number" aria-hidden="true">05</span><h3>Agenda e produção não conversam</h3></li>
+          <li class="pain-card reveal reveal-delay"><span class="pain-number" aria-hidden="true">06</span><h3>Fica difícil saber o que precisa ser feito hoje</h3></li>
+        </ul>
+        <p class="closing-note reveal">Com o WePhotly, cada cliente avança por um fluxo claro — do primeiro atendimento ao pagamento e à entrega.</p>
+      </div>
+    </section>
+
+    <!-- 4. Antes x Depois -->
+    <section class="section compare-section" id="antes-e-depois">
+      <div class="container">
+        <div class="section-heading narrow reveal">
+          <h2>Menos ferramentas soltas. Mais clareza sobre o que precisa acontecer.</h2>
+          <p>O WePhotly conecta as etapas que hoje costumam ficar espalhadas entre WhatsApp, planilhas, agenda e memória.</p>
         </div>
-        <div class="turnaround reveal">
-          <p>Com o WePhotly, você abre o sistema e sabe:</p>
-          <div class="turnaround-items">
-            <span><b>01</b> quem precisa de resposta</span>
-            <span><b>02</b> o que precisa ser feito</span>
-            <span><b>03</b> o que precisa ser recebido</span>
+        <ul class="compare-list reveal">
+          <li>
+            <div class="compare-before"><span>Antes</span><p>WhatsApp para lembrar retornos</p></div>
+            <i class="compare-arrow" aria-hidden="true">→</i>
+            <div class="compare-after"><span>Com WePhotly</span><p>Próxima ação sempre visível</p></div>
+          </li>
+          <li>
+            <div class="compare-before"><span>Antes</span><p>Planilha de clientes</p></div>
+            <i class="compare-arrow" aria-hidden="true">→</i>
+            <div class="compare-after"><span>Com WePhotly</span><p>Histórico centralizado</p></div>
+          </li>
+          <li>
+            <div class="compare-before"><span>Antes</span><p>Agenda separada</p></div>
+            <i class="compare-arrow" aria-hidden="true">→</i>
+            <div class="compare-after"><span>Com WePhotly</span><p>Sessões conectadas ao fluxo</p></div>
+          </li>
+          <li>
+            <div class="compare-before"><span>Antes</span><p>Controle manual de sinal e saldo</p></div>
+            <i class="compare-arrow" aria-hidden="true">→</i>
+            <div class="compare-after"><span>Com WePhotly</span><p>Financeiro ligado ao atendimento</p></div>
+          </li>
+          <li>
+            <div class="compare-before"><span>Antes</span><p>Produção na memória</p></div>
+            <i class="compare-arrow" aria-hidden="true">→</i>
+            <div class="compare-after"><span>Com WePhotly</span><p>Etapas de produção organizadas</p></div>
+          </li>
+          <li>
+            <div class="compare-before"><span>Antes</span><p>Contratos espalhados</p></div>
+            <i class="compare-arrow" aria-hidden="true">→</i>
+            <div class="compare-after"><span>Com WePhotly</span><p>Contrato dentro do atendimento</p></div>
+          </li>
+          <li>
+            <div class="compare-before"><span>Antes</span><p>Informações em vários lugares</p></div>
+            <i class="compare-arrow" aria-hidden="true">→</i>
+            <div class="compare-after"><span>Com WePhotly</span><p>Tudo conectado em um único fluxo</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 5. Fluxo do atendimento -->
+    <section class="section flow-section" id="fluxo">
+      <div class="container">
+        <div class="section-heading narrow reveal">
+          <h2>Cada atendimento no caminho certo, do orçamento à entrega.</h2>
+          <p>O WePhotly mostra o que já foi feito e qual é a próxima ação para você conduzir cada cliente com segurança.</p>
+        </div>
+        <ol class="journey reveal">
+          <li>Atendimento</li>
+          <li>Orçamento</li>
+          <li>Cadastro</li>
+          <li>Contrato e LGPD</li>
+          <li>Sinal</li>
+          <li>Sessão</li>
+          <li>Produção</li>
+          <li>Financeiro</li>
+          <li>Entrega</li>
+        </ol>
+        <p class="journey-note reveal">Atendimentos, contratos, sessões, produção, financeiro e entrega ficam conectados em um único lugar.</p>
+      </div>
+    </section>
+
+    <!-- 6. Demonstração em vídeo
+         Para ativar o vídeo, basta colocar os arquivos em:
+           /assets/demo/demo-wephotly.mp4
+           /assets/demo/demo-wephotly-poster.jpg (opcional)
+         Enquanto o vídeo não existir, o mockup animado (.demo-mockup) é exibido. A lógica fica em script.js. -->
+    <section class="section demo-section" id="demonstracao">
+      <div class="container">
+        <div class="section-heading narrow reveal">
+          <h2>Veja o WePhotly funcionando.</h2>
+          <p>Em poucos segundos, você entende como o atendimento avança do primeiro contato até a entrega.</p>
+        </div>
+
+        <div class="demo-frame reveal" data-demo aria-label="Demonstração do WePhotly">
+          <div class="demo-window-bar" aria-hidden="true"><i></i><i></i><i></i></div>
+          <div class="demo-screen">
+            <video class="demo-video" muted loop playsinline autoplay preload="metadata" hidden aria-label="Vídeo de demonstração do WePhotly">
+              <source src="/assets/demo/demo-wephotly.mp4" type="video/mp4">
+            </video>
+
+            <div class="demo-mockup" aria-hidden="true">
+              <aside class="demo-mock-side">
+                <span class="demo-mock-logo"></span>
+                <b class="is-on">Atendimento</b>
+                <b>Orçamento</b>
+                <b>Sessão</b>
+                <b>Produção</b>
+                <b>Financeiro</b>
+                <b>Entrega</b>
+              </aside>
+              <div class="demo-mock-main">
+                <div class="demo-mock-steps">
+                  <span style="--i:0">Atendimento</span>
+                  <span style="--i:1">Orçamento</span>
+                  <span style="--i:2">Sessão</span>
+                  <span style="--i:3">Produção</span>
+                  <span style="--i:4">Financeiro</span>
+                  <span style="--i:5">Entrega</span>
+                </div>
+                <div class="demo-mock-progress"><i></i></div>
+                <div class="demo-mock-next">
+                  <strong>Próxima ação</strong>
+                  <i></i><i></i>
+                </div>
+                <div class="demo-mock-rows">
+                  <div><i></i><i></i><em></em></div>
+                  <div><i></i><i></i><em></em></div>
+                  <div><i></i><i></i><em></em></div>
+                  <div><i></i><i></i><em></em></div>
+                  <div><i></i><i></i><em></em></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="demo-cover">
+              <div class="demo-cover-panel">
+                <p class="demo-cover-title">Veja como o WePhotly organiza a rotina do estúdio</p>
+                <p class="demo-cover-text">Do primeiro atendimento à entrega final.</p>
+                <button class="demo-play" type="button" data-event="demo_click">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg>
+                  Assistir demonstração
+                </button>
+              </div>
+            </div>
+
+            <button class="demo-toggle" type="button" aria-label="Pausar demonstração" data-event="demo_click" hidden>
+              <svg class="icon-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg>
+              <svg class="icon-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg>
+            </button>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="section flow-section" id="como-funciona">
-      <div class="container flow-grid">
-        <div class="flow-copy reveal">
-          <p class="kicker kicker-light">Do atendimento à entrega</p>
-          <h2>Cada cliente segue um caminho claro. Você sempre sabe o próximo passo.</h2>
-          <p>O WePhotly conecta as etapas que hoje vivem separadas e transforma a rotina do estúdio em um fluxo simples de acompanhar.</p>
-          <a class="text-link" href="#planos">Começar a organizar agora <span aria-hidden="true">→</span></a>
+        <ul class="demo-indicators reveal">
+          <li>Atendimento</li>
+          <li>Orçamento</li>
+          <li>Sessão</li>
+          <li>Produção</li>
+          <li>Financeiro</li>
+          <li>Entrega</li>
+        </ul>
+
+        <div class="demo-after reveal">
+          <p class="demo-after-lead">Do primeiro contato à entrega, cada etapa fica visível e organizada.</p>
+          <p>Você sabe o que já foi feito, o que está pendente e qual é a próxima ação.</p>
+          <a class="button" href="#planos">Ver planos</a>
+          <small>7 dias de garantia com reembolso integral.</small>
         </div>
-        <ol class="flow-list reveal reveal-delay">
-          <li><span>01</span><div><strong>Atenda e envie o orçamento</strong><small>Registre o contato e acompanhe a proposta.</small></div></li>
-          <li><span>02</span><div><strong>Formalize e agende</strong><small>Conecte contrato, consentimento, sinal e sessão.</small></div></li>
-          <li><span>03</span><div><strong>Produza e entregue</strong><small>Acompanhe seleção, edição, prazos e entrega.</small></div></li>
-          <li><span>04</span><div><strong>Controle o financeiro</strong><small>Veja pagamentos e pendências ligados a cada trabalho.</small></div></li>
-        </ol>
       </div>
     </section>
 
-    <section class="section features-section" id="recursos">
+    <!-- 7. Recursos principais -->
+    <section class="section features-section" id="funcionalidades">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="kicker">Tudo conversa com tudo</p>
-          <h2>Uma central de comando para o seu estúdio.</h2>
-          <p>Informações organizadas por cliente e por etapa, sem obrigar você a montar uma operação complicada.</p>
+          <h2>Mais controle para atender, fotografar e entregar.</h2>
         </div>
-        <div class="bento-grid">
-          <article class="feature-card feature-large reveal">
-            <div class="feature-icon">◎</div>
-            <div>
-              <p class="feature-label">Visão diária</p>
-              <h3>Atendimentos e próximas ações</h3>
-              <p>Enxergue cada cliente por etapa e veja rapidamente o que precisa acontecer a seguir.</p>
-            </div>
-            <div class="mini-pipeline" aria-hidden="true">
-              <span class="active"><i></i> Novo contato <b>8</b></span>
-              <span><i></i> Orçamento <b>5</b></span>
-              <span><i></i> Contrato <b>3</b></span>
-            </div>
-          </article>
-          <article class="feature-card reveal reveal-delay-small">
-            <div class="feature-icon">◇</div>
-            <p class="feature-label">Relacionamento</p>
-            <h3>Clientes e histórico</h3>
-            <p>Dados, famílias, empresas, observações e sessões reunidos em um só lugar.</p>
-          </article>
-          <article class="feature-card feature-accent reveal reveal-delay">
-            <div class="feature-icon">⌁</div>
-            <p class="feature-label">Formalização</p>
-            <h3>Orçamentos, contratos e LGPD</h3>
-            <p>Leve a negociação até a confirmação sem quebrar o histórico do atendimento.</p>
-          </article>
-          <article class="feature-card reveal">
-            <div class="feature-icon">▦</div>
-            <p class="feature-label">Agenda</p>
-            <h3>Sessões e Google Calendar</h3>
-            <p>Organize os compromissos e mantenha sua rotina conectada.</p>
-          </article>
-          <article class="feature-card feature-photo reveal reveal-delay-small">
-            <div class="feature-icon">◉</div>
-            <p class="feature-label">Pós-sessão</p>
+        <ul class="feature-grid">
+          <li class="feature-card reveal">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 12a8.5 8.5 0 0 1-12.4 7.55L3.5 20.5l1-4.4A8.5 8.5 0 1 1 20.5 12z"/><path d="M8.5 12h.01M12 12h.01M15.5 12h.01"/></svg></div>
+            <h3>Atendimentos</h3>
+            <p>Saiba em que etapa cada cliente está e qual é a próxima ação.</p>
+          </li>
+          <li class="feature-card reveal reveal-delay-small">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9.5" cy="8" r="3.5"/><path d="M3.5 20v-1.5A3.5 3.5 0 0 1 7 15h5a3.5 3.5 0 0 1 3.5 3.5V20"/><path d="M15.5 4.6a3.5 3.5 0 0 1 0 6.8M20.5 20v-1.5a3.5 3.5 0 0 0-2.5-3.35"/></svg></div>
+            <h3>Clientes, famílias e empresas</h3>
+            <p>Tenha dados, observações e histórico de sessões sempre à mão.</p>
+          </li>
+          <li class="feature-card reveal reveal-delay">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h4"/></svg></div>
+            <h3>Orçamentos</h3>
+            <p>Organize propostas, valores e opções de sessão para cada cliente.</p>
+          </li>
+          <li class="feature-card reveal">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+            <h3>Contratos e LGPD</h3>
+            <p>Mantenha documentos e consentimentos ligados ao atendimento.</p>
+          </li>
+          <li class="feature-card reveal reveal-delay-small">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></div>
+            <h3>Agenda com Google Calendar</h3>
+            <p>Mantenha sessões, horários e compromissos conectados à rotina do estúdio.</p>
+          </li>
+          <li class="feature-card reveal reveal-delay">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 8h3l2-3h6l2 3h3a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13.5" r="3.5"/></svg></div>
             <h3>Produção fotográfica</h3>
-            <p>Acompanhe cada trabalho da seleção à edição e entrega final.</p>
-            <div class="production-line" aria-hidden="true"><i class="done"></i><i class="done"></i><i class="current"></i><i></i></div>
-          </article>
-          <article class="feature-card reveal reveal-delay">
-            <div class="feature-icon">$</div>
-            <p class="feature-label">Resultado</p>
-            <h3>Financeiro por trabalho</h3>
-            <p>Sinais, saldos e movimentações conectados a cada cliente.</p>
-          </article>
-        </div>
+            <p>Acompanhe seleção, tratamento, aprovação e entrega em cada trabalho.</p>
+          </li>
+          <li class="feature-card reveal">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="M3 10h18M15.5 14.5h2"/></svg></div>
+            <h3>Financeiro</h3>
+            <p>Controle sinal, saldo, pagamentos e pendências por atendimento.</p>
+          </li>
+          <li class="feature-card reveal reveal-delay-small">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h9M17 6h3M4 12h3M11 12h9M4 18h11M19 18h1"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/></svg></div>
+            <h3>Tipos de sessão configuráveis</h3>
+            <p>Adapte o sistema aos ensaios e serviços que você oferece.</p>
+          </li>
+          <li class="feature-card reveal reveal-delay">
+            <div class="feature-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.5 21V5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v16M14.5 9h4a1 1 0 0 1 1 1v11M3 21h18M8.5 8h2M8.5 12h2M8.5 16h2"/></svg></div>
+            <h3>Multiestúdio e equipe</h3>
+            <p>Organize diferentes unidades e colaboradores dentro da mesma operação.</p>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section class="section screenshot-section">
-      <div class="container screenshot-grid">
-        <div class="screenshot-wrap screenshot-crop reveal">
-          <picture>
-            <source srcset="/images/wephotly-dashboard-crop.avif" type="image/avif">
-            <source srcset="/images/wephotly-dashboard-crop.webp" type="image/webp">
-            <img src="/images/wephotly-dashboard-crop.png" alt="Detalhe do painel WePhotly com resumo operacional, próximas ações e financeiro do estúdio" width="1100" height="583" loading="lazy" decoding="async">
-          </picture>
+    <!-- 8. Tecnologia e acesso em qualquer lugar -->
+    <section class="section tech-section" id="tecnologia">
+      <div class="container">
+        <div class="section-heading narrow reveal">
+          <h2>Seu estúdio acompanha você.</h2>
+          <p>Seus dados ficam organizados na nuvem para você acessar o WePhotly onde estiver e pelo dispositivo que fizer sentido para a sua rotina.</p>
         </div>
-        <div class="screenshot-copy reveal reveal-delay">
-          <p class="kicker">Clareza em poucos segundos</p>
-          <h2>Abra o WePhotly e entenda como está o seu estúdio.</h2>
-          <ul class="check-list">
-            <li><span>✓</span> Próximas sessões e tarefas visíveis</li>
-            <li><span>✓</span> Atendimentos organizados por etapa</li>
-            <li><span>✓</span> Produções com prazo para avançar</li>
-            <li><span>✓</span> Resumo financeiro da operação</li>
-          </ul>
-          <p class="note">Responsivo para você consultar a rotina onde estiver.</p>
-        </div>
+        <ul class="tech-grid">
+          <li class="tech-card reveal">
+            <div class="tech-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5a4.5 4.5 0 0 1-.7-8.95 6 6 0 0 1 11.55 1.6A3.7 3.7 0 0 1 17.3 18.5z"/></svg></div>
+            <h3>Na nuvem</h3>
+            <p>Seus dados ficam armazenados online para que você não dependa de um único computador.</p>
+          </li>
+          <li class="tech-card reveal reveal-delay-small">
+            <div class="tech-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div>
+            <h3>Acesse de onde estiver</h3>
+            <p>Consulte sua operação no estúdio, em casa ou durante um trabalho externo.</p>
+          </li>
+          <li class="tech-card reveal reveal-delay">
+            <div class="tech-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="5" width="15" height="10.5" rx="1.5"/><path d="M2.5 19h19"/></svg></div>
+            <h3>Computador e notebook</h3>
+            <p>Use toda a área de gestão em telas maiores para administrar a rotina do estúdio.</p>
+          </li>
+          <li class="tech-card reveal">
+            <div class="tech-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M11 18h2"/></svg></div>
+            <h3>Celular e tablet</h3>
+            <p>Consulte clientes, sessões, agenda e informações importantes mesmo longe do computador.</p>
+          </li>
+          <li class="tech-card reveal reveal-delay-small">
+            <div class="tech-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></div>
+            <h3>Google Calendar</h3>
+            <p>Mantenha sessões e compromissos conectados à sua agenda.</p>
+          </li>
+          <li class="tech-card reveal reveal-delay">
+            <div class="tech-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9.5" cy="8" r="3.5"/><path d="M3.5 20v-1.5A3.5 3.5 0 0 1 7 15h5a3.5 3.5 0 0 1 3.5 3.5V20"/><path d="M15.5 4.6a3.5 3.5 0 0 1 0 6.8M20.5 20v-1.5a3.5 3.5 0 0 0-2.5-3.35"/></svg></div>
+            <h3>Equipe conectada</h3>
+            <p>Trabalhe com colaboradores e mantenha a operação organizada dentro do mesmo ambiente.</p>
+          </li>
+          <li class="tech-card reveal">
+            <div class="tech-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5l9 5-9 5-9-5z"/><path d="M3 13l9 5 9-5"/></svg></div>
+            <h3>Multiestúdio</h3>
+            <p>Organize diferentes unidades sem perder a visão da operação.</p>
+          </li>
+          <li class="tech-card reveal reveal-delay-small">
+            <div class="tech-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M6.5 6.5h.01M9 6.5h.01"/></svg></div>
+            <h3>Sem instalação</h3>
+            <p>O WePhotly funciona pelo navegador. Basta acessar sua conta e continuar de onde parou.</p>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section class="section story-section" id="historia-real">
+    <!-- 9. Benefícios na rotina -->
+    <section class="section benefits-section" id="beneficios">
+      <div class="container">
+        <div class="section-heading reveal">
+          <h2>O que muda na sua rotina.</h2>
+        </div>
+        <ul class="benefit-grid">
+          <li class="benefit-card reveal"><h3>Menos coisas para lembrar</h3><p>O sistema mostra o que precisa da sua atenção e qual é a próxima ação.</p></li>
+          <li class="benefit-card reveal reveal-delay-small"><h3>Menos tempo procurando informação</h3><p>Cliente, sessão, contrato, produção e pagamento ficam conectados.</p></li>
+          <li class="benefit-card reveal reveal-delay"><h3>Mais previsibilidade</h3><p>Você sabe o que está pendente, o que precisa avançar e o que já foi concluído.</p></li>
+          <li class="benefit-card reveal"><h3>Mais profissionalismo</h3><p>Seu processo deixa de depender de improviso, memória e informações espalhadas.</p></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 10. História de origem -->
+    <section class="section story-section" id="historia">
       <div class="container story-grid">
         <div class="story-intro reveal">
-          <p class="kicker">Uma história real</p>
-          <h2>Não nasceu de uma lista de funcionalidades. Nasceu dentro de um estúdio.</h2>
-          <p>O WePhotly foi pensado a partir dos desafios que aparecem quando o volume de clientes cresce e a fotografia precisa dividir espaço com atendimento, prazos, produção e cobrança.</p>
+          <h2>Criado dentro de um estúdio. Não em uma sala de reunião.</h2>
         </div>
-        <figure class="testimonial reveal reveal-delay">
-          <div class="quote-mark">“</div>
-          <blockquote>O WePhotly nasceu da rotina real de um estúdio fotográfico. A ideia sempre foi organizar aquilo que antes ficava espalhado entre WhatsApp, agenda, planilhas, contratos, produção e financeiro.</blockquote>
-          <figcaption>
-            <div class="avatar">EA</div>
-            <div><strong>Ellen Azevedo Fotografia</strong><span>Estúdio que inspirou o WePhotly</span></div>
-          </figcaption>
-        </figure>
-      </div>
-      <div class="container proof-facts reveal">
-        <div><strong>Desde 2016</strong><span>fotografando famílias</span></div>
-        <div><strong>Rotina real</strong><span>de atendimento e produção</span></div>
-        <div><strong>Vários segmentos</strong><span>newborn, família, gestante e infantil</span></div>
+        <div class="story-text reveal reveal-delay">
+          <p>O WePhotly surgiu da rotina da Ellen Azevedo Fotografia, acompanhando na prática o que acontece quando o número de clientes cresce: mais mensagens, contratos, sessões, prazos, produção e pagamentos para controlar.</p>
+          <p>Foi daí que nasceu a ideia de organizar todo esse caminho em um único fluxo.</p>
+          <p>O objetivo nunca foi criar mais uma ferramenta para preencher. Foi criar um sistema que ajude o fotógrafo a saber o que precisa ser feito e seguir trabalhando.</p>
+          <p class="signature">Ellen Azevedo Fotografia</p>
+        </div>
       </div>
     </section>
 
-    <section class="section audience-section">
+    <!-- 11. Feito para fotógrafos -->
+    <section class="section made-for-section" id="feito-para-fotografos">
       <div class="container">
         <div class="section-heading narrow reveal">
-          <p class="kicker">Feito para o seu jeito de fotografar</p>
-          <h2>Seu segmento muda. A necessidade de organização, não.</h2>
+          <h2>Feito para fotógrafos. Não adaptado para fotógrafos.</h2>
+          <p>O WePhotly entende orçamento, sinal, sessão, contrato, produção, entrega e família porque foi pensado a partir da rotina de quem trabalha com fotografia.</p>
+          <p>Você não precisa adaptar sua forma de trabalhar a um sistema genérico. O sistema acompanha a lógica real de um estúdio fotográfico.</p>
         </div>
-        <div class="audience-tags reveal">
-          <span>Newborn</span><span>Família</span><span>Gestante</span><span>Infantil</span><span>Casamento</span><span>Eventos</span><span>Corporativo</span><span>Produtos</span><span>Imóveis</span><span>Escolar</span><span>Formatura</span><span>Pets</span>
-        </div>
-        <p class="audience-note reveal">Você configura seus tipos de sessão e adapta o sistema à realidade do seu estúdio.</p>
+        <ul class="highlight-chips reveal">
+          <li>Próxima ação</li><li>Orçamento</li><li>Contrato</li><li>Sinal</li><li>Sessão</li><li>Produção</li><li>Entrega</li><li>Financeiro</li>
+        </ul>
       </div>
     </section>
 
-    <section class="section steps-section">
+    <!-- 12. Segmentos atendidos -->
+    <section class="section audience-section" id="para-quem-e">
       <div class="container">
         <div class="section-heading narrow reveal">
-          <p class="kicker">Comece sem complicação</p>
-          <h2>Da escolha do plano ao primeiro acesso.</h2>
+          <h2>Feito para quem vive de fotografia e precisa cuidar de toda a operação.</h2>
+        </div>
+        <ul class="audience-tags reveal">
+          <li>Newborn</li><li>Família</li><li>Infantil</li><li>Gestante</li><li>Casamento</li><li>Eventos</li><li>Corporativo</li><li>Produtos</li><li>Imóveis</li><li>Pets</li><li>Escolar</li><li>Formatura</li><li>Equipes</li><li>Pequenos estúdios</li>
+        </ul>
+        <p class="audience-note reveal">Se sua rotina envolve atender clientes, enviar orçamento, agendar sessões, receber sinal, produzir imagens e entregar trabalhos, o WePhotly foi pensado para você.</p>
+      </div>
+    </section>
+
+    <!-- 13. Prova social -->
+    <section class="section proof-section" id="prova-social">
+      <div class="container">
+        <div class="section-heading narrow reveal">
+          <h2>Fotógrafos precisam de tempo para fotografar, não para se perder na gestão.</h2>
+          <p>Uma rotina organizada deixa mais espaço para aquilo que realmente importa.</p>
+        </div>
+        <!-- Depoimentos: adicione novos depoimentos REAIS duplicando o <figure class="testimonial"> abaixo.
+             Com dois ou mais itens, o grid se ajusta automaticamente. -->
+        <div class="testimonials">
+          <figure class="testimonial reveal">
+            <div class="quote-mark" aria-hidden="true">“</div>
+            <blockquote>O WePhotly nasceu da rotina real de um estúdio fotográfico. A ideia sempre foi organizar aquilo que antes ficava espalhado entre WhatsApp, agenda, planilhas, contratos, produção e financeiro.</blockquote>
+            <figcaption>
+              <div class="avatar" aria-hidden="true">EA</div>
+              <strong>Ellen Azevedo Fotografia</strong>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. Começar é simples -->
+    <section class="section steps-section" id="comecar">
+      <div class="container">
+        <div class="section-heading narrow reveal">
+          <h2>Comece a organizar seu estúdio em três passos.</h2>
         </div>
         <ol class="steps-grid">
-          <li class="reveal"><span>1</span><h3>Escolha seu plano</h3><p>Os recursos são os mesmos. Você decide entre flexibilidade ou economia.</p></li>
-          <li class="reveal reveal-delay-small"><span>2</span><h3>Pague com segurança</h3><p>Conclua a assinatura no checkout protegido.</p></li>
-          <li class="reveal reveal-delay"><span>3</span><h3>Configure seu estúdio</h3><p>Receba o acesso por e-mail, crie seu usuário e comece a organizar.</p></li>
+          <li class="reveal"><span aria-hidden="true">1</span><h3>Escolha seu plano</h3><p>O sistema é o mesmo nos dois planos. Escolha o período que faz mais sentido para sua rotina.</p></li>
+          <li class="reveal reveal-delay-small"><span aria-hidden="true">2</span><h3>Finalize com segurança</h3><p>Você será direcionado para o checkout seguro e poderá concluir sua assinatura.</p></li>
+          <li class="reveal reveal-delay"><span aria-hidden="true">3</span><h3>Receba seu acesso</h3><p>Após a confirmação do pagamento, você recebe por e-mail o link para criar seu usuário e configurar seu estúdio.</p></li>
         </ol>
+        <p class="steps-note reveal">Você tem 7 dias de garantia com reembolso integral.</p>
       </div>
     </section>
 
+    <!-- 15. Planos -->
     <section class="section pricing-section" id="planos">
       <div class="pricing-glow"></div>
       <div class="container">
         <div class="section-heading narrow reveal">
-          <p class="kicker">Planos simples</p>
-          <h2>O mesmo WePhotly. Você escolhe como pagar.</h2>
-          <p>Todos os recursos essenciais de gestão estão incluídos nos dois planos.</p>
+          <h2>Escolha o plano que combina com seu momento.</h2>
+          <p>O sistema é o mesmo nos dois planos. O que muda é o valor mensal conforme o período escolhido.</p>
         </div>
         <div class="pricing-grid">
           <article class="price-card reveal">
-            <div class="price-top"><span class="plan-pill">Mensal</span></div>
-            <h3>Plano Mensal</h3>
+            <h3>Mensal</h3>
             <p class="price"><strong>R$ 89,90</strong><span>/mês</span></p>
-            <p class="price-description">Para começar com flexibilidade.</p>
+            <p class="price-description">Para quem quer começar com flexibilidade.</p>
             <ul class="price-benefits">
-              <li>✓ Todos os recursos do WePhotly</li>
               <li>✓ Cobrança automática mensal</li>
               <li>✓ Cancele quando quiser</li>
-              <li>✓ 7 dias de garantia</li>
+              <li>✓ Todos os recursos do WePhotly</li>
+              <li>✓ 7 dias de garantia com reembolso integral</li>
             </ul>
-            <a class="button button-secondary checkout-button" href="https://app.wephotly.com/checkout?plan=mensal">Começar no mensal</a>
+            <a class="button button-secondary checkout-button" href="https://app.wephotly.com/checkout?plan=mensal" data-event="monthly_plan_click" data-plan="mensal">Começar no mensal</a>
           </article>
 
           <article class="price-card price-featured reveal reveal-delay">
             <span class="popular-badge">Mais escolhido</span>
-            <div class="price-top"><span class="plan-pill">Anual</span><span class="save-pill">Economize R$ 240</span></div>
-            <h3>Plano Anual</h3>
+            <div class="price-top"><span class="plan-pill">Melhor custo-benefício</span><span class="save-pill">Economize R$ 240</span></div>
+            <h3>Anual</h3>
             <p class="price"><strong>12x de R$ 69,90</strong></p>
-            <p class="price-description">O melhor custo-benefício para organizar o ano inteiro.</p>
+            <p class="price-description">Economize R$ 240 por ano.</p>
             <ul class="price-benefits">
-              <li>✓ Todos os recursos do WePhotly</li>
               <li>✓ Acesso por 12 meses</li>
               <li>✓ Menor valor mensal</li>
-              <li>✓ 7 dias de garantia</li>
+              <li>✓ Todos os recursos do WePhotly</li>
+              <li>✓ Melhor custo-benefício</li>
+              <li>✓ 7 dias de garantia com reembolso integral</li>
             </ul>
-            <a class="button checkout-button" href="https://app.wephotly.com/checkout?plan=anual">Escolher plano anual</a>
+            <a class="button checkout-button" href="https://app.wephotly.com/checkout?plan=anual" data-event="annual_plan_click" data-plan="anual">Escolher plano anual</a>
           </article>
         </div>
-        <div class="pricing-assurances reveal">
-          <span>🔒 Checkout seguro</span>
-          <span>✉ Acesso enviado por e-mail</span>
-          <span>✓ Todos os recursos nos dois planos</span>
-        </div>
       </div>
     </section>
 
-    <section class="section guarantee-section">
+    <!-- 16. Garantia de 7 dias -->
+    <section class="section guarantee-section" id="garantia">
       <div class="container guarantee-card reveal">
-        <div class="guarantee-seal"><strong>7</strong><span>DIAS</span></div>
-        <div>
-          <p class="kicker kicker-light">Sua decisão protegida</p>
-          <h2>Teste o WePhotly na rotina real do seu estúdio.</h2>
-          <p>Você tem 7 dias para conhecer o sistema e avaliar com tranquilidade. Se não fizer sentido para sua rotina, solicite o cancelamento dentro desse período, conforme as condições da assinatura.</p>
+        <div class="guarantee-seal" aria-hidden="true"><strong>7</strong><span>DIAS</span></div>
+        <div class="guarantee-copy">
+          <h2>Teste na rotina do seu estúdio por 7 dias.</h2>
+          <p class="guarantee-subtitle">Sua decisão está protegida.</p>
+          <p>Assine normalmente e use todos os recursos do WePhotly. Se dentro de 7 dias corridos após a contratação você decidir não continuar, solicite o cancelamento e devolvemos 100% do valor pago.</p>
+          <ul class="guarantee-points">
+            <li>✓ Reembolso integral</li>
+            <li>✓ Até 7 dias corridos após a contratação</li>
+            <li>✓ Sem necessidade de justificar sua decisão</li>
+            <li>✓ Cancelamento conforme as condições da assinatura</li>
+          </ul>
         </div>
-        <a class="button button-white" href="#planos">Quero testar com garantia</a>
+        <a class="button button-white" href="#planos" data-event="guarantee_click">Escolher meu plano</a>
       </div>
     </section>
 
+    <!-- 17. FAQ -->
     <section class="section faq-section" id="faq">
       <div class="container faq-grid">
         <div class="faq-intro reveal">
-          <p class="kicker">Dúvidas frequentes</p>
-          <h2>Antes de organizar seu estúdio, tire suas dúvidas.</h2>
-          <p>A resposta que você procura pode estar aqui. Se ainda quiser conhecer melhor, escolha um plano e use os 7 dias para testar.</p>
+          <h2>Tire suas dúvidas sobre o WePhotly.</h2>
         </div>
         <div class="faq-list reveal reveal-delay">
-          <details open><summary>O WePhotly é só para estúdio grande?<span>+</span></summary><p>Não. Ele atende fotógrafos independentes, pequenos estúdios e operações com mais de um estúdio ou equipe.</p></details>
-          <details><summary>O que muda entre os planos?<span>+</span></summary><p>Os recursos são os mesmos. O plano mensal oferece flexibilidade; o anual reduz o valor mensal e gera economia de R$ 240 no ano.</p></details>
-          <details><summary>Depois de pagar, como recebo acesso?<span>+</span></summary><p>Após a confirmação do pagamento, você recebe por e-mail o link para criar seu usuário e configurar seu estúdio.</p></details>
-          <details><summary>Posso usar no celular?<span>+</span></summary><p>Sim. O WePhotly é responsivo e funciona em computador, tablet e celular.</p></details>
-          <details><summary>Ele substitui minhas planilhas?<span>+</span></summary><p>Sim. Você passa a acompanhar atendimentos, clientes, sessões, produção e financeiro em um único lugar.</p></details>
-          <details><summary>Funciona com Google Calendar?<span>+</span></summary><p>Sim. A integração ajuda a manter sessões e compromissos conectados à rotina do estúdio.</p></details>
-          <details><summary>Posso cadastrar diferentes tipos de sessão?<span>+</span></summary><p>Sim. Você configura seus próprios tipos de sessão para adaptar o sistema ao seu segmento fotográfico.</p></details>
+          <details open><summary>O WePhotly é só para estúdio grande?<span aria-hidden="true">+</span></summary><p>Não. O WePhotly atende fotógrafos independentes, pequenos estúdios e operações com mais de um estúdio ou equipe.</p></details>
+          <details><summary>O que muda entre o plano mensal e o anual?<span aria-hidden="true">+</span></summary><p>Os recursos são os mesmos nos dois planos. O plano mensal oferece mais flexibilidade, enquanto o plano anual oferece o menor valor mensal e melhor custo-benefício.</p></details>
+          <details><summary>Depois de pagar, como recebo acesso?<span aria-hidden="true">+</span></summary><p>Após a confirmação do pagamento, você receberá por e-mail o link para criar seu usuário e configurar seu estúdio.</p></details>
+          <details><summary>E se eu contratar e perceber que o WePhotly não é para mim?<span aria-hidden="true">+</span></summary><p>Você tem 7 dias corridos após a contratação para testar o WePhotly na rotina do seu estúdio. Se decidir não continuar dentro desse período, solicite o cancelamento e reembolsaremos integralmente o valor pago.</p></details>
+          <details><summary>Preciso cadastrar todos os meus clientes antigos?<span aria-hidden="true">+</span></summary><p>Não. Você pode começar utilizando o WePhotly nos próximos atendimentos e cadastrar informações anteriores apenas quando fizer sentido para sua rotina.</p></details>
+          <details><summary>Posso cancelar quando quiser?<span aria-hidden="true">+</span></summary><p>No plano mensal, você pode cancelar a renovação a qualquer momento. No plano anual, o acesso corresponde ao período contratado. As condições completas ficam disponíveis nos <a href="/termos-de-uso.html">Termos de Uso</a> e na página de <a href="/cancelamento-e-garantia.html">Cancelamento e Garantia</a>.</p></details>
+          <details><summary>O que acontece se eu cancelar?<span aria-hidden="true">+</span></summary><p>Após o cancelamento, novas cobranças deixam de ocorrer conforme as condições do plano contratado. O acesso ao sistema permanece de acordo com o período já pago e com as regras descritas nos Termos de Uso.</p></details>
+          <details><summary>Meus dados ficam seguros?<span aria-hidden="true">+</span></summary><p>O WePhotly utiliza autenticação e controle de acesso para limitar o uso das informações às pessoas autorizadas dentro do estúdio.</p></details>
+          <details><summary>Os dados ficam na nuvem?<span aria-hidden="true">+</span></summary><p>Sim. O WePhotly funciona online e mantém as informações do estúdio disponíveis para acesso pela sua conta, sem depender de um único computador.</p></details>
+          <details><summary>Posso acessar de diferentes dispositivos?<span aria-hidden="true">+</span></summary><p>Sim. O WePhotly pode ser utilizado pelo navegador em computador, notebook, tablet e celular.</p></details>
+          <details><summary>Preciso instalar alguma coisa?<span aria-hidden="true">+</span></summary><p>Não. O WePhotly funciona pela internet e pode ser acessado diretamente pelo navegador.</p></details>
+          <details><summary>Posso cadastrar diferentes tipos de sessão?<span aria-hidden="true">+</span></summary><p>Sim. Os tipos de sessão são configuráveis para acompanhar os serviços oferecidos pelo seu estúdio.</p></details>
+          <details><summary>Funciona com Google Calendar?<span aria-hidden="true">+</span></summary><p>Sim. A integração ajuda a manter sessões e compromissos conectados à rotina do estúdio.</p></details>
+          <details><summary>Serve para todos os tipos de fotografia?<span aria-hidden="true">+</span></summary><p>Sim. O WePhotly foi pensado para fotógrafos e estúdios de diferentes segmentos, como newborn, família, infantil, gestante, casamento, eventos, corporativo, produtos, imóveis, pets, escolar, formatura e outros tipos de fotografia.</p></details>
+          <details><summary>Consigo usar sozinho ou com equipe?<span aria-hidden="true">+</span></summary><p>Sim. O WePhotly atende tanto fotógrafos que trabalham sozinhos quanto estúdios com equipe.</p></details>
         </div>
       </div>
     </section>
 
+    <!-- 18. CTA final -->
     <section class="final-cta">
       <div class="container final-cta-inner reveal">
         <div>
-          <p class="kicker kicker-light">Seu próximo trabalho começa mais organizado</p>
-          <h2>Chega de descobrir o que ficou para trás quando o cliente pergunta.</h2>
-          <p>Tenha clareza para atender melhor, cumprir prazos e cuidar do crescimento do seu estúdio.</p>
+          <h2>Organize seu estúdio e ganhe clareza para cuidar de cada cliente.</h2>
+          <p class="final-cta-lead">Reúna atendimentos, orçamentos, contratos, sessões, produção, entregas e financeiro em um sistema feito para fotógrafos.</p>
+          <ul class="final-checks">
+            <li>✓ 7 dias de garantia com reembolso integral</li>
+            <li>✓ Checkout seguro</li>
+            <li>✓ Acesso enviado por e-mail</li>
+          </ul>
         </div>
         <a class="button button-white" href="#planos">Organizar meu estúdio agora</a>
       </div>
@@ -429,46 +636,29 @@
         <picture>
           <source srcset="/brand/wephotly-logo.avif" type="image/avif">
           <source srcset="/brand/wephotly-logo.webp" type="image/webp">
-          <img src="/brand/wephotly-logo.png" alt="WePhotly" width="352" height="276">
+          <img src="/brand/wephotly-logo.png" alt="WePhotly" width="352" height="276" loading="lazy">
         </picture>
-        <p>Gestão inteligente para fotógrafos.</p>
+        <p>Sistema de gestão inteligente para fotógrafos.</p>
       </div>
-      <div class="footer-links">
-        <strong>WePhotly</strong>
-        <a href="#como-funciona">Como funciona</a>
-        <a href="#recursos">Recursos</a>
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <a href="https://app.wephotly.com/login" data-event="login_click">Entrar</a>
         <a href="#planos">Planos</a>
-      </div>
-      <div class="footer-links">
-        <strong>Acesso</strong>
-        <a href="https://app.wephotly.com/login">Entrar no sistema</a>
-        <a href="#faq">Dúvidas frequentes</a>
-        <a href="#historia-real">Nossa história</a>
-        <a href="https://www.instagram.com/wephotly/" target="_blank" rel="noopener">Instagram</a>
-      </div>
-      <div class="payment-area">
-        <strong>Pagamento seguro</strong>
-        <p>Principais bandeiras aceitas no checkout</p>
-        <div class="payment-brands" aria-label="Bandeiras de cartão aceitas">
-          <span class="visa">VISA</span>
-          <span class="mastercard"><i></i><i></i></span>
-          <span class="elo">elo</span>
-          <span class="amex">AMERICAN<br>EXPRESS</span>
-        </div>
-        <small>🔒 Ambiente de pagamento protegido</small>
-      </div>
-    </div>
-    <div class="container footer-bottom">
-      <p>© 2026 WePhotly · J&amp;J Enterprise · CNPJ 33.801.206/0001-70 · Itajubá/MG · <a href="mailto:wephotly@gmail.com">wephotly@gmail.com</a></p>
-      <nav class="legal-links" aria-label="Informações legais">
+        <a href="#funcionalidades">Funcionalidades</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <nav class="footer-links" aria-label="Informações legais">
         <a href="/termos-de-uso.html">Termos de Uso</a>
         <a href="/politica-de-privacidade.html">Política de Privacidade</a>
         <a href="/cancelamento-e-garantia.html">Cancelamento e Garantia</a>
       </nav>
     </div>
+    <div class="container footer-bottom">
+      <p>J&amp;J Enterprise · CNPJ 33.801.206/0001-70 · Itajubá/MG · <a href="mailto:wephotly@gmail.com">wephotly@gmail.com</a></p>
+      <p>© 2026 WePhotly. Todos os direitos reservados.</p>
+    </div>
   </footer>
 
   <div class="toast" role="status" aria-live="polite" hidden></div>
-  <script src="/script.js?v=20261001" defer></script>
+  <script src="/script.js?v=20261028" defer></script>
 </body>
 </html>
